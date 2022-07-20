@@ -68,13 +68,14 @@ body{
     text-align: center;
     margin-left: 10px;
 }
-
+.img{
+    width: 100%;
+}
 .fao-solid{
     display: flex;
     margin-left: 10px;
     text-decoration: none;
-    text-justify: auto;
-    padding-inline: 10px;
+    justify-content: space-evenly;
 }
 .seson{
     display: flex;
@@ -86,9 +87,10 @@ body{
     
 }
 .player{
-    border: 2px solid;
     border-radius: 10px;
     margin: 10px;
+    
+
 }
 .para{
     margin-left: 10px;
@@ -118,39 +120,42 @@ body{
 /* ----------------
    media-query 
 -----------------*/
-@media only screen and (max-width: 1100px) {
-    .game{
-        width: 75%;
-        padding-left: 6px;
-    }
-    .player{
-        width: 25%;
 
-    }
-}
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 688px) {
+    
     #banner{
-        flex-direction:column ;
+        grid-template-columns: repeat(1,1fr);
     }
+    @media only screen and (max-width: 800px) {
+        #banner{
+            flex-direction:column ;
+        }
 }
-@media only screen and (max-width: 1100px) {
-    .match{
-        width: 25%%;
-    }
-    .players .trans .para{
-        width: 20%;
-        grid-template-columns: none;
-        
-    }
+@media only screen and (max-width: 688px) {
+ .match{
+    grid-template-columns: repeat(1,1fr);
+ } 
+ .match{
+    flex-direction: column;
+ }
+ .players{
+    grid-template-columns: repeat(1,1fr);
+    
+ } 
+ .players{
+    flex-direction: column;
+ }
+  .seson{
+    flex-direction: column;
+  }
+
 }
-@media only screen and (max-width: 800px) {
-    .seson{
-        flex-direction:column ;
-    }
-}
-@media only screen and (max-width: 800px) {
-    .seson{
-        grid-template-columns:repeat(1,1fr);
-        
-    }
+@media only screen and (max-width: 688px) {
+  .footer{
+    grid-template: repeat(1,1fr);
+  }
+  .footers{
+    flex-direction: column;
+    text-align: center;
+  }
 }
