@@ -1,4 +1,5 @@
 /* header---- */
+
 #banner{
     background-color: black;
     display: flex;
@@ -21,7 +22,8 @@
    border: 2px solid;
    width: 200px;
    background-color: black;
-   margin: 40px;
+   height: 200px;
+   margin: 40px 40px 10px 20px;
    
    
 
@@ -32,7 +34,7 @@
     margin: 10px 10px 10px 10px;
     text-align: center;
     color: black;
-    border-radius: 10px;
+    border-radius: 7px;
 }
 .kela{
     border: 1px solid;
@@ -40,7 +42,7 @@
     margin: 10px 10px 10px 10px;
     text-align: center;
     color: black;
-    border-radius: 10px;
+    border-radius: 7px;
 }
 .all{
     border: 1px solid;
@@ -48,7 +50,7 @@
     margin: 10px 10px 10px 10px;
     text-align: center;
     color: azure;
-    border-radius: 10px;
+    border-radius: 7px;
 }
 .best-player{
    display: grid;
@@ -64,12 +66,14 @@
 
 .fao-solid{
     display: flex;
-    align-items: center;
-    justify-content: space-around;
     margin-left: 10px;
+    text-decoration: none;
+    text-justify: auto;
+    padding-inline: 10px;
 }
 .seson{
     display: flex;
+    margin-left: 30px;
 }
 .players{
     display: grid;
@@ -83,4 +87,25 @@
 }
 .para{
     margin-left: 10px;
+}
+/* -----fotter-part -----
+/* */-------------------- *
+.footer{
+    background-color: black;
+}
+.inner-footer{
+    background-color: black;
+}
+.footer-col{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 50px;color: aliceblue;
+}
+.footers{
+    display: flex;
+    justify-content: space-around;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: aliceblue;
 }
