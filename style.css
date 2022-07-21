@@ -17,6 +17,7 @@ body{
 }
 .best-player{
     width: 85%;
+    padding-top: 30px;
 }
 .btn{
     border: 1px solid;
@@ -27,7 +28,9 @@ body{
     padding: 20px 20px 20px 20px;
     
 }
-/* ----game-------*/
+/* -------------
+player identity
+------------------*/
 .match{
    border: 2px solid;
    width: 200px;
@@ -118,7 +121,7 @@ body{
     color: aliceblue;
 }
 /* ----------------
-   media-query 
+media-query/mlobile device
 -----------------*/
 
 @media only screen and (max-width: 688px) {
@@ -158,4 +161,16 @@ body{
     flex-direction: column;
     text-align: center;
   }
+} 
+
+/* ------------
+ipad query
+/* ----------------- * */
+@media only screen and (min-width: 688px) and (max-width:992px){
+  .player{
+    background-color: blue;
+  }
 }
+/* -------------
+ipad-query
+----------------- */
